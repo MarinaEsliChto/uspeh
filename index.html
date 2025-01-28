@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сосал?)))</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="modal">
+        <p class="message">Сосал?)))</p>
+        <div class="buttons">
+            <button class="yes">Да</button>
+            <button class="no">Нет</button>
+        </div>
+    </div>
+
+    <script>
+        document.querySelector(".no").addEventListener("click", function() {
+            this.style.display = "none";
+                    });
+
+        document.querySelector(".yes").addEventListener("click", function() {
+            document.querySelector(".message").textContent = "Молодец, так держать, друг! 👏👏👏";
+            document.querySelector(".buttons").style.display = "none";
+        });
+    </script>
+</body>
+</html>
